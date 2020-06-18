@@ -23,6 +23,7 @@ It is strongly recommended to minimize the FEMM window during the simulation, in
 
 
 Those include:
+
 A. The measurement parameters:
 	-No of electrodes (N)
 	-current skip-m (skipcurr)

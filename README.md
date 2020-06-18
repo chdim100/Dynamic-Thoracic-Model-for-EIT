@@ -19,7 +19,7 @@ It is strongly recommended to minimize the FEMM window during the simulation, in
 
 ---------------INSTRUCTIONS------------------------
 
-1) Initialize the input parameters in Test_Dynamic_model_script.m  REMEMBER TO SET THE paths!!! (to Bio-lungs and eidors folders, see below at F)
+Step 1) Initialize the input parameters in Test_Dynamic_model_script.m  REMEMBER TO SET THE paths!!! (to Bio-lungs and eidors folders, see below at F)
 
 
 Those include:
@@ -62,17 +62,17 @@ silent space is 0.3seconds and next breath lasts +20%. Initial heart beat rate i
 F. paths: A cell array. paths{1} denotes the directory to the Bio-lungs folder ('C:\.....\Bio-lungs\'), paths{2} denotes the directory to the Eidors library ('C:\.....\eidors-v3.9-ng\eidors\')
 
 
-2) Run Test_Dynamic_model_script.m .  This calls the Dynamic_Thorax_Imaging function which takes the defined parameters and generates a .lua script. 
+Step 2) Run Test_Dynamic_model_script.m .  This calls the Dynamic_Thorax_Imaging function which takes the defined parameters and generates a .lua script. 
 
-3) Wait for the .lua script to LOAD
+Step 3) Wait for the .lua script to LOAD
 
-4) Open a FEMM (open current-flow problem). The go to file->Open Lua script and open the created .lua file  
+Step 4) Open a FEMM (open current-flow problem). The go to file->Open Lua script and open the created .lua file  
 
-5) Wait until FEMM performs the simulations for the dynamic 2D structures. For faster process, MINIMIZE the FEMM window. 
+Step 5) Wait until FEMM performs the simulations for the dynamic 2D structures. For faster process, MINIMIZE the FEMM window. 
 This Process may take from some minutes to a couple of hours, depended on the total frames and electrodes simulated, and the CPU
 
-6) When FEMM finishes, press enter in MATLAB console and wait until the final noise-free measurements load. 
+Step 6) When FEMM finishes, press enter in MATLAB console and wait until the final noise-free measurements load. 
 
-7) RUN reconstruction_and_functional_analysis.m WITH THE SAME MEASUREMENT PARAMETERS (N, SKIPCURR, SKIPVOLT).
+Step 7) RUN reconstruction_and_functional_analysis.m WITH THE SAME MEASUREMENT PARAMETERS (N, SKIPCURR, SKIPVOLT).
 
-8) Wait till reconstructed images appear
+Step 8) Wait till reconstructed images appear

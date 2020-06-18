@@ -1,0 +1,1 @@
+Load the .lua files in FEMM from this folder. After the simulation you can either delete them or re-use them. 

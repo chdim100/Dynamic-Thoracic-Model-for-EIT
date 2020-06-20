@@ -36,16 +36,27 @@ A. The measurement parameters:
 
 B. The Model Parameters: parameters that define the measuring properties:
 1. end_Admittances: includes the inspiration/ expiration-end conductivities and permittivities of each tissue
+
     -deflated lung conductivity (S/m)  end_Admittances(1)
+    
     -inflated lung conductivity (S/m)  end_Admittances(2)
+    
     -blood cycle-related conductivity variance in lungs (S/m) end_Admittances(3)
+    
     -deflated lung permittivity (F/m)  end_Admittances(4)
+    
     -inflated lung permittivity (F/m)  end_Admittances(5)
+    
     -blood cycle-related permittivity variance in lungs (F/m)  end_Admittances(6)
+    
     -base heart (champers, aorta, no-myocardium) conductivity (S/m) end_Admittances(7)
+    
     -base heart (champers, aorta, no-myocardium) conductivity variation (S/m) end_Admittances(8)
+    
     -base heart (champers, aorta, no-myocardium) conductivity (S/m) end_Admittances(9)
+    
     -base heart (champers, aorta, no-myocardium) permittivity variation (F/m) end_Admittances(10)
+    
 2. breath_time (seconds), Initial Breathing Time
 3. delec (cm), the electrodes width
 4. bpm, Initial Heart Rate

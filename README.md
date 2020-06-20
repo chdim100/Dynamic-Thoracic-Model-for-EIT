@@ -12,7 +12,7 @@ EIDORS open source library tool (v.3.9 or later)  http://eidors3d.sourceforge.ne
 FEMM open software for 2D F.E.M. meshing  http://www.femm.info/wiki/HomePage
 
 
-Simulation times depend on the the total number of total steps (electrode number X total frames) and the CPU's speed. 
+Simulation times depend on the the total number of steps (electrode number X total frames) and the CPU's speed. 
 
 It is strongly recommended to minimize the FEMM window during the simulation, in order to significantly increase simulation speeds. 
 

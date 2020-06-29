@@ -7,7 +7,7 @@ Requirements:
 
 MATLAB 2018b or later
 
-EIDORS open source library tool (v.3.9 or later)  http://eidors3d.sourceforge.net/
+EIDORS open source library tool (v.3.9 or later)  http://eidors3d.sourceforge.net/ [1]
 
 FEMM open software for 2D F.E.M. meshing  http://www.femm.info/wiki/HomePage
 
@@ -87,3 +87,6 @@ Step 6) When FEMM finishes, press enter in MATLAB console and wait until the fin
 Step 7) RUN reconstruction_and_functional_analysis.m WITH THE SAME MEASUREMENT PARAMETERS (N, SKIPCURR, SKIPVOLT).
 
 Step 8) Wait till reconstructed images appear
+
+
+[1] Adler, Andy, and William RB Lionheart. "Uses and abuses of EIDORS: an extensible software base for EIT." Physiological measurement 27.5 (2006): S25.

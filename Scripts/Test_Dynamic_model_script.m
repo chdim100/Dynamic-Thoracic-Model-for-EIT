@@ -29,25 +29,25 @@ Zelectrodes(:,2)=300*(randn(N,1)*0.3+1);
 delec=0.5; %electrode_width (cm)
 random_start=0;
 random_state=0;
-%deflated lung conductivity at 200kHz ~0.25S/m []
-%inflated lung conductivity at 200kHz ~0.1S/m []
+%deflated lung conductivity at 200kHz ~0.25S/m [1], [2]
+%inflated lung conductivity at 200kHz ~0.1S/m [1], [2]
 slairmax=0.25; %(S/m)
 end_Admittances(1)=slairmax;
 slairmin=0.1; %(S/m)
 end_Admittances(2)=slairmin;
 %blood cycle-related conductivity variance in lungs ~0.008S/m (10-20 times
-%less than air-related [])
+%less than air-related [1])
 dslblood=0.008; %(S/m)
 end_Admittances(3)=dslblood;
 
-%deflated lung permittivity at 200kHz ~4000F/m []
-%inflated lung permittivity at 200kHz ~2000F/m []
+%deflated lung permittivity at 200kHz ~4000F/m [1], [2]
+%inflated lung permittivity at 200kHz ~2000F/m [1], [2]
 elairmax=4000; %(S/m)
 end_Admittances(4)=elairmax;
 elairmin=2000; %(S/m)
 end_Admittances(5)=elairmin;
 %blood cycle-related permittivity variance in lungs ~100 F/m (10-20 times
-%less than air-related [])
+%less than air-related [1])
 delblood=100;
 end_Admittances(6)=delblood;
 
@@ -56,7 +56,7 @@ end_Admittances(6)=delblood;
 Sheart=0.55; %(S/m)
 end_Admittances(7)=Sheart;
 %base heart (champers, aorta, no-myocardium) conductivity variation ~0.025 S/m at
-%200kHz (~15-20%)[]
+%200kHz (~15-20%)[3]
 dSheart=0.025;
 end_Admittances(8)=dSheart;
 
@@ -65,7 +65,7 @@ end_Admittances(8)=dSheart;
 Eheart=6000;
 end_Admittances(9)=Eheart;
 %base heart (champers, aorta, no-myocardium) permittivity variation ~300 S/m at
-%200kHz (~15-20%)[]
+%200kHz (~15-20%)[3]
 dEheart=300;
 end_Admittances(10)=dEheart;
 
@@ -85,4 +85,17 @@ Model_params=[end_Admittances breath_time delec bpm Collapse_LL Collapse_RL];
 
 
 %%%%%References
+
+%[1] S. Gabriel, R. Lau, and C. Gabriel, “The dielectric properties of
+%biological tissues: Ii. measurements in the frequency range 10 hz to
+%20 ghz,” Physics in medicine & biology, vol. 41, no. 11, p. 2251, 1996.
+
+%[2] ——, “The dielectric properties of biological tissues: Iii. parametric
+%models for the dielectric spectrum of tissues,” Physics in Medicine &
+%Biology, vol. 41, no. 11, p. 2271, 1996.
+
+%[3]K. Raghavan, J. E. Porterfield, A. T. Kottam, M. D. Feldman, D. Escobedo,
+%J. W. Valvano, and J. A. Pearce, “Electrical conductivity and
+%permittivity of murine myocardium,” IEEE Transactions on Biomedical
+%Engineering, vol. 56, no. 8, pp. 2044–2053, 2009.
 

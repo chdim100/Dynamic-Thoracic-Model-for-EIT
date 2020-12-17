@@ -24,7 +24,7 @@ It is strongly recommended to minimize the FEMM window during the simulation, in
 
 ---------------INSTRUCTIONS------------------------
 
-Step 1) Initialize the input parameters in Test_Dynamic_model_script.m  REMEMBER TO SET THE paths!!! (to Bio-lungs and eidors folders, see below at F)
+Step 1) Initialize the input parameters in Test_Dynamic_model_script.m  REMEMBER TO SET THE paths!!! (to Bio-lungs and EIDORS folders, see below at F)
 
 
 Those include:

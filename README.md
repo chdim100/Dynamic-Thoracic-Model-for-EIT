@@ -3,6 +3,11 @@
 Dynamic 2D Thoracic Electrical Impedance Tomography Simulation Model
 
 
+//--This project has been published in 2020 IEEE 20th International Conference on Bioinformatics and Bioengineering (BIBE) Proceedings 
+with the title "A highly tunable dynamic thoracic model for Electrical Impedance Tomography"
+DOI: 10.1109/BIBE50027.2020.00163 and is available at https://ieeexplore.ieee.org/document/9288054/references#references  --//
+
+
 Requirements:
 
 MATLAB 2018b or later
